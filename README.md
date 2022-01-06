@@ -34,7 +34,7 @@ NVME: Samsung SM951 256GB
 
 
 # Install
-Get a USB disk (capacity>= 16GB). Be patient, you Mac (the one you are using to make installer) might be picky, treat it, buy yourself a new USB disk.
+Get a USB disk (capacity>= 16GB). Be patient, you Mac (the one you are using to make installer) might be picky, treat it, buy a new USB disk.
 
 Follow [OpenCore Installation Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/#creating-the-usb).
 
@@ -45,10 +45,27 @@ TL;DR: All you need are:
 - Mount the USB disk's EFI volume by means of [MountEFI](https://github.com/corpnewt/MountEFI).
 - Generate [SMBIOS](https://github.com/corpnewt/GenSMBIOS)
 - Download this repo, rename `EFI-deskmini110-KBL-dw1560-Monterey` to `EFI`
-- Replace `SystemProductName` `SystemSerialNumber` `MLB` and `SystemUUID` in `EFI/OC/config.plist` with your own values.
+- Replace `SystemProductName`, `SystemSerialNumber`, `MLB` and `SystemUUID` in `EFI/OC/config.plist` with your just generated values.
 - Copy **entire** `EFI` folder to the USB disk's EFI volume.
-- Adjust BIOS settings.  
+- Adjust BIOS settings. 
 - Install macOS.
 - Post-install: mount both EFI volumes of the USB disk and internal HDD, copy `EFI` folder from the USB disk to internal HDD.
+---
+About BIOS settings:
+Be sure to Disable:
+- [ ] Fast boot
+- [ ] Secure boot
+- [ ] CSM
+- [ ] Intel SGX
+- [ ] Serial port
 
-You are done, enjoy.   
+Enable:
+- [x] VT-D
+- [x] HT
+
+You are done, enjoy.
+Thanks to
+[@dortania](https://github.com/dortania)
+[@corpnewt](https://github.com/corpnewt)
+[@acidanthera](https://github.com/acidanthera)
+[@xRetia](https://github.com/dfc643)
