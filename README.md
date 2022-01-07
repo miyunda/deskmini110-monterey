@@ -28,13 +28,13 @@ NVME: Samsung SM951 256GB
 - [ ] HDMI
 - [ ] 3.5 mm jack
 - [ ] DRM playback (It is a headless)
-- [ ] VGA output(Guess it won't work))
+- [ ] VGA output(Guess it won't work)
 ## Does not work:
 - [ ] Sleep (Didn't test, I am sure it would fail on wakeup)
 
 
 # Install
-Get a USB disk (capacity>= 16GB). Be patient, you Mac (the one you are using to make installer) might be picky, treat it, buy a new USB disk.
+Get a USB disk (capacity >= 16GB). Be patient, you Mac (the one you are using to make installer) might be picky, treat it, buy a new USB disk.
 
 Follow [OpenCore Installation Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/#creating-the-usb).
 
@@ -52,16 +52,20 @@ TL;DR: All you need are:
 - Post-install: mount both EFI volumes of the USB disk and internal HDD, copy `EFI` folder from the USB disk to internal HDD.
 ---
 About BIOS settings:
+
 Be sure to Disable:
 - [ ] Fast boot
 - [ ] Secure boot
 - [ ] CSM
 - [ ] Intel SGX
+- [ ] Intel Platform Trust
 - [ ] Serial port
 
 Enable:
 - [x] VT-D
-- [x] HT
+- [x] Hyper-Threading
+- [x] XHCI Hand-off
+- [x] DVMT Pre-Allocated(iGPU Memory): 64MB
 
 You are done, enjoy.
 Thanks to
