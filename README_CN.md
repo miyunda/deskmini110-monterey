@@ -1,3 +1,5 @@
+[English](README.md)
+
 华擎 Deskmini 110 黑苹果 Monterey
 # 硬件
 主板: 华擎 Deskmini 110/COM

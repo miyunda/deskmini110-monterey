@@ -1,3 +1,5 @@
+[中文](README_CN.md)
+
 Build a hackintosh with AsRock Deskmini 110
 # Environment
 MB: AsRock Deskmini 110/COM
