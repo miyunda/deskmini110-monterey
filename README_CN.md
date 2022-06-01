@@ -1,5 +1,5 @@
 [English](README.md)
-
+20220601更新，在线升级到12.4，工作正常。
 20220305更新：直接升级到Monterey 12.2.1 无问题。
 ---
 华擎 Deskmini 110 黑苹果 Monterey
