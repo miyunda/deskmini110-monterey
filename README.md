@@ -1,5 +1,7 @@
 [中文](README_CN.md)
 
+Update on 20220601 OS upgraded to 12.4.
+---
 Update on 20220305: OS upgraded to 12.2.1 without any issue.
 ---
 Build a hackintosh with AsRock Deskmini 110
